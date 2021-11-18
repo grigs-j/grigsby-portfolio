@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="/src/components/contact/style.css" />
+        <script src="app.js" defer></script>
+        <title>Jonathan Grigsby | Contact</title>
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="container">
+                <div class="nav--container" id="container">
+                    <ul class="nav--flex">
+                        <li class="fist-nav-li">
+                            <a href="../index.html">HOME</a>
+                        </li>
+                        <li class="mid-nav-li">
+                            <a href="../index.html#projects">PROJECTS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container">
+                <div class="contact-form">
+                  <input type="hidden" name="_next" value="https://jongrigsby.com/thanks.html">
+                  <input type="hidden" name="_subject" value="WEBSITE FORM SUBMIT">
+                  
+                    <form
+                        method="POST"
+                        action="https://formsubmit.co/grigsbyjonathan@gmail.com"
+                        class="form"
+                    >
+                        <input
+                            name="name"
+                            class="input-name"
+                            type="text"
+                            placeholder="Your Name"
+                            required
+                        />
+                        <input
+                            name="email"
+                            class="input-email"
+                            type="text"
+                            placeholder="Your Email"
+                            required
+                        />
+                        <textarea
+                            name="message"
+                            cols="30"
+                            rows="6"
+                            class="message-box"
+                            placeholder="Message here"
+                            required
+                        ></textarea>
+
+                        <button type="submit" class="form-submit button"></button>
+                            SEND
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
