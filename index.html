@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="/src/components/main/main.css" />
+        <script src="app.js" defer></script>
+        <title>Jonathan Grigsby</title>
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="nav--container" id="container">
+                <ul class="nav--flex">
+                    <li class="fist-nav-li"><a href="#">HOME</a></li>
+                    <li class="mid-nav-li"><a href="#projects">PROJECTS</a></li>
+                    <li class="last-nav-li">
+                        <a href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero--container" id="container">
+                <h1 class="hero--main-text">Front End Developer</h1>
+                <p class="hero--subtext">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Neque, porro.
+                </p>
+
+                <div class="hero--button-container">
+                    <a href="#skills" class="hero--button button"
+                        >view projects
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="container" id="container">
+                <div class="skills--text-control">
+                    <div class="skills--design-text">
+                        <h2>Design <span class="special">&</span> Develop</h2>
+                        <p class="text">
+                            Working on a minimal design with high impact is my
+                            favorite thing to do. I love color, type, animation,
+                            user experience and all things creative involving
+                            web design.
+                        </p>
+                        <p class="text">
+                            As an independent self starter I am used to staying
+                            on schedule. Being able to communicate in a focused
+                            manner allows me to bring ideas to reality.
+                        </p>
+                    </div>
+                    <div class="skills--list-control">
+                        <div class="skills--list">
+                            <p class="list-text">Bootstrap</p>
+                            <p class="list-text">Tailwind</p>
+                            <p class="list-text">Node</p>
+                            <p class="list-text">React</p>
+                            <p class="list-text">API/JSON</p>
+                        </div>
+                        <div class="skills--list">
+                            <p class="list-text">HTML</p>
+                            <p class="list-text">CSS</p>
+                            <p class="list-text">SASS</p>
+                            <p class="list-text">JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="back-to-top-arrow">
+                    <a href="#"><i class="fas fa-chevron-up"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="projects--main-text">
+                <h1 class="h1">Projects</h1>
+            </div>
+            <div class="projects--control-flex" id="container">
+                <div class="projects--parent-flex">
+                    <div class="projects--card card-mg">
+                        <div class="projects--card-content">
+                            <img
+                                src="/src/img/mg-1.PNG"
+                                alt=""
+                                class="card-image image-mg"
+                            />
+                            <div class="card-text-control">
+                                <h2 class="card-title">Author Website</h2>
+                                <p class="card-text">
+                                    Designed website for author Mike Grigsby
+                                    promoting his new thriller release. Minimal
+                                    and dynamic.
+                                </p>
+                                <div class="card-button-control">
+                                    <a
+                                        href="http://michaelgrigsby.com/"
+                                        target="_blank"
+                                        class="projects--button spec button"
+                                        >View Site</a
+                                    >
+                                    <a
+                                        href="https://github.com/grigs-j"
+                                        target="_blank"
+                                        class="projects--button spec button"
+                                        >View Code</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects--card card-react">
+                        <div class="projects--card-content">
+                            <img
+                                src="/src/img/movie-db2.PNG"
+                                alt=""
+                                class="card-image image-rmdb"
+                            />
+                            <div class="card-text-control">
+                                <h2 class="card-title">
+                                    React movie search website
+                                </h2>
+                                <p class="card-text">
+                                    A movie search data base using react,
+                                    styled, SASS, and APIs.
+                                </p>
+                                <div class="card-button-control">
+                                    <a
+                                        href="https://reactmoviedbapp2021.netlify.app/"
+                                        target="_blank"
+                                        class="projects--button spec button"
+                                        >View Project</a
+                                    >
+                                    <a
+                                        href="https://github.com/grigs-j"
+                                        target="_blank"
+                                        class="projects--button spec button"
+                                        >View Code</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects--card card-poke">
+                        <div class="projects--card-content">
+                            <img
+                                src="/src/img/pokedex-pic.PNG"
+                                alt=""
+                                class="card-image image-poke"
+                            />
+                            <div class="card-text-control">
+                                <h2 class="card-title">
+                                    PokeAPI React Pokedex
+                                </h2>
+                                <p class="card-text">
+                                    A react app utilizing rest APIs, reach
+                                    hooks, states and props, html and sass.
+                                </p>
+                                <div class="card-button-control">
+                                    <a
+                                        href="https://react-pokedex-2021.netlify.app/"
+                                        target="_blank"
+                                        class="projects--button spec button"
+                                        >View Project</a
+                                    >
+                                    <a
+                                        href="https://github.com/grigs-j"
+                                        target="_blank"
+                                        class="projects--button spec button"
+                                        >View Code</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects--card card-calc">
+                        <div class="projects--card-content">
+                            <img
+                                src="/src/img/calcpic.PNG"
+                                alt=""
+                                class="card-image image-calc"
+                            />
+                            <div class="card-text-control">
+                                <h2 class="card-title">
+                                    JavaScript Calculator
+                                </h2>
+                                <p class="card-text">
+                                    A fully functioning calculator built using
+                                    vanilla javascript, html, and css. Code
+                                    available on Github.
+                                </p>
+                                <div class="card-button-control">
+                                    <a
+                                        href="calc.html"
+                                        target="_blank"
+                                        class="projects--button spec button"
+                                        >View Project</a
+                                    >
+                                    <a
+                                        href="https://github.com/grigs-j"
+                                        target="_blank"
+                                        class="projects--button spec button"
+                                        >View Code</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects--card card-todo">
+                        <div class="projects--card-content">
+                            <img
+                                src="/src/img/calcpic.PNG"
+                                alt=""
+                                class="card-image image-todo"
+                            />
+                            <div class="card-text-control">
+                                <h2 class="card-title">React To Do List</h2>
+                                <p class="card-text">
+                                    A to do list created with react utilizing
+                                    hooks, state, local storage.
+                                </p>
+                                <div class="card-button-control">
+                                    <a
+                                        href="#"
+                                        target="_blank"
+                                        class="projects--button spec button"
+                                        >View Project</a
+                                    >
+                                    <a
+                                        href="https://github.com/grigs-j"
+                                        target="_blank"
+                                        class="projects--button spec button"
+                                        >View Code</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects--card card-fem">
+                        <div class="projects--card-content">
+                            <img
+                                src="/src/img/calcpic.PNG"
+                                alt=""
+                                class="card-image image-fem"
+                            />
+                            <div class="card-text-control">
+                                <h2 class="card-title">
+                                    Front End Mentor Templates
+                                </h2>
+                                <p class="card-text">
+                                    Clones of websites recreated using HTML,
+                                    SASS, and Javascript.
+                                </p>
+                                <div class="card-button-control">
+                                    <a
+                                        href="fem.html"
+                                        target="_blank"
+                                        class="projects--button spec button"
+                                        >View Projects</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer" id="footer">
+            <div class="overlay"></div>
+            <div id="container">
+                <div class="footer--cta">
+                    <h2>Interested in working together?</h2>
+                    <button id="modal-btn" class="modal-button">
+                        Let's talk!
+                    </button>
+                </div>
+            </div>
+
+            <div class="footer--social-container">
+                <a href="https://github.com/grigs-j" target="_blank"
+                    ><i class="fab fa-github-square 2x"></i
+                ></a>
+                <a
+                    href="https://www.linkedin.com/in/jonathan-grigsby-21a726222/"
+                    target="_blank"
+                    ><i class="fab fa-linkedin"></i
+                ></a>
+            </div>
+
+            <!-- <p class="footer--created-note">
+                Jonathan Grigsby
+                <span id="date"></span>
+            </p> -->
+        </footer>
+        <div id="email-modal" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <div class="modal-intro">
+                    <h1>Hi, Let's Talk!</h1>
+                    <p>
+                        Fill out the form below to get in touch with me if
+                        you're interested in working together, or have any
+                        questions!
+                    </p>
+                </div>
+                <form action="#" method="post">
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name" />
+                        </li>
+                        <li>
+                            <label for="mail">E-mail:</label>
+                            <input type="email" id="mail" name="user_email" />
+                        </li>
+                        <li>
+                            <label for="msg">Message:</label>
+                            <textarea
+                                rows="6"
+                                id="msg"
+                                name="user_message"
+                            ></textarea>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

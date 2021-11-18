@@ -1,0 +1,74 @@
+.skills {
+    text-align: center;
+    background: linear-gradient(to right, rgb(25, 93, 241), #4ccce2);
+    padding: 2rem 0;
+    margin-bottom: 8rem;
+
+    &--text-control {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+    }
+
+    &--design-text h2 {
+        margin-bottom: 1rem;
+    }
+    &--design-text span {
+        font-size: 2rem;
+    }
+
+    &--list-control {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .special {
+        color: $pink;
+    }
+    &--list {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+    p.text {
+        font-size: 0.825rem;
+        letter-spacing: 0.5px;
+        margin-bottom: 1rem;
+    }
+    p.list-text {
+        font-size: 1.25rem;
+    }
+
+    @include breakpoint(tablet) {
+        h2 {
+            font-size: 1.75rem;
+            padding-bottom: 0.5rem;
+        }
+        div.skills--text-control {
+            flex-direction: row;
+            text-align: justify;
+        }
+        div.skills--design-text {
+            margin-right: 2rem;
+        }
+    }
+
+    @include breakpoint(desktop) {
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        p.text {
+            font-size: 1rem;
+        }
+
+        p.list-text {
+            font-size: 1.6rem;
+            line-height: 1.6;
+        }
+    }
+
+    @include breakpoint(xlarge) {
+    }
+}

@@ -1,0 +1,59 @@
+.footer {
+    text-align: center;
+    background: linear-gradient(120deg, rgb(236, 222, 253), rgb(225, 201, 255));
+
+    h2 {
+        color: $purp;
+        font-family: $lato;
+        font-size: 2.25rem;
+        margin: 6rem 0 4rem 0;
+    }
+
+    &--cta {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding-bottom: 5.5rem;
+
+        .modal-button {
+            z-index: 100;
+            color: #fff;
+            background: linear-gradient(120deg, $pink, #4ccce2);
+            &:hover {
+                transform: scale(1.01);
+                transition: all 250ms ease-in-out;
+                box-shadow: 0.05rem 0.1rem 0.25rem rgb(212, 212, 212);
+            }
+        }
+    }
+
+    &--social-container {
+        display: flex;
+        width: 150px;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        padding-bottom: 2.5rem;
+
+        i {
+            z-index: 100;
+            font-size: 2rem;
+            color: $purp;
+            &:hover {
+                color: $pink;
+                transition: color ease-in 250ms;
+            }
+        }
+    }
+}
+
+@include breakpoint(tablet) {
+    .footer h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@include breakpoint(desktop) {
+    .footer h2 {
+        font-size: 3.5rem;
+    }
+}
