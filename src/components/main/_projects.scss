@@ -68,8 +68,11 @@
     }
 
     .card-image {
-        display: block;
+        display: flex;
         transition: 0.4s ease-in-out;
+        img {
+            display: block;
+        }
     }
     .image-calc {
         margin: 0 auto;
@@ -185,7 +188,8 @@
     }
 
     img.image-mg,
-    img.image-rmdb {
+    img.image-rmdb,
+    img.image-fem {
         width: 870px;
     }
 

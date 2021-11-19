@@ -713,9 +713,15 @@ p {
 }
 
 .projects .card-image {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
+}
+
+.projects .card-image img {
+  display: block;
 }
 
 .projects .image-calc {
@@ -839,7 +845,8 @@ p {
     width: 100%;
   }
   img.image-mg,
-  img.image-rmdb {
+  img.image-rmdb,
+  img.image-fem {
     width: 870px;
   }
   div.projects--card {
@@ -878,13 +885,14 @@ p {
   padding-bottom: 5.5rem;
 }
 
-.footer--cta .modal-button {
+.footer--cta .footer--button {
+  border: none;
   z-index: 100;
   color: #fff;
   background: linear-gradient(120deg, #c899f5, #4ccce2);
 }
 
-.footer--cta .modal-button:hover {
+.footer--cta .footer--button:hover {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
   -webkit-transition: all 250ms ease-in-out;

@@ -22,12 +22,12 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 1200px) {
-  #container {
+  .container {
     width: 70%;
   }
 }
@@ -52,39 +52,6 @@ ul,
 p {
   margin: 0;
   padding: 0;
-}
-
-h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 2.25rem;
-  text-align: center;
-}
-
-h2 {
-  font-family: "Playfair Display", serif;
-}
-
-p {
-  font-family: "Lato";
-}
-
-.button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: "Lato";
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #fff;
-  display: block;
-  width: 180px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  text-transform: uppercase;
-  font-size: 0.825rem;
-  border: 1px solid #999999;
 }
 
 .nav {
@@ -223,20 +190,81 @@ p {
   }
 }
 
+.title {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 2.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  font-family: "Lato";
+}
+
 .contact-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 4rem;
+  font-family: "Lato";
 }
 
 form {
-  margin-top: 3rem;
+  display: block;
 }
 
 input {
+  width: 100%;
+  font-size: 1rem;
   background: transparent;
-  border: 1px solid #7a19f1;
+  border: none;
+  border-bottom: 1px solid #797ad8;
+  outline: none;
+  margin-bottom: 1.5rem;
+}
+
+textarea {
+  font-family: "Lato";
+  width: 100%;
+  font-size: 1rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #797ad8;
   outline: none;
   margin-bottom: 2rem;
+}
+
+.button {
+  font-family: "Lato";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-size: 0.825rem;
+  cursor: pointer;
+  border: 1px solid #999999;
+  color: #1c1ec2;
+}
+
+.button:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  -webkit-box-shadow: 0.05rem 0.1rem 0.25rem rgba(121, 122, 216, 0.4);
+          box-shadow: 0.05rem 0.1rem 0.25rem rgba(121, 122, 216, 0.4);
 }
 /*# sourceMappingURL=style.css.map */

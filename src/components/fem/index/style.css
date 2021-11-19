@@ -45,7 +45,6 @@ li {
 
 h1,
 h2,
-h3,
 li,
 ul,
 p {
@@ -53,23 +52,27 @@ p {
   padding: 0;
 }
 
-h1 {
+.title {
   font-family: "Playfair Display", serif;
-  font-size: 3.25rem;
+  font-size: 2.5rem;
   text-align: center;
-  margin: 2rem 0 4rem 0;
+  margin: 2.5rem 0 1rem;
+}
+
+.subtext {
+  margin-bottom: 2rem;
 }
 
 h2 {
   font-family: "Playfair Display", serif;
   font-size: 2.25rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 p {
   text-align: center;
   font-family: "Lato";
-  margin-bottom: 2rem;
+  margin-bottom: 0.75rem;
 }
 
 .button {
@@ -89,7 +92,7 @@ p {
   text-transform: uppercase;
   font-size: 0.825rem;
   border: 1px solid #999999;
-  margin: 2rem auto;
+  margin: 0 auto 2rem;
 }
 
 .nav {
@@ -184,17 +187,24 @@ p {
 }
 
 .fem-card {
-  max-width: 675px;
-  min-height: 400px;
+  max-width: 100%;
   margin: 0 auto;
   -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   overflow: hidden;
   height: 100%;
+  padding: 1rem;
 }
 
 .fem-card .text-half {
@@ -208,7 +218,8 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 60%;
+  width: 100%;
+  padding: 1rem;
 }
 
 .fem-card .preview-half img {
@@ -218,5 +229,37 @@ p {
 
 .fem-card h2 {
   text-align: center;
+}
+
+@media screen and (min-width: 780px) {
+  h1.title {
+    font-size: 3.25rem;
+    width: 70%;
+    margin: 4rem auto 1rem;
+  }
+  p.subtext {
+    width: 70%;
+    margin: 0 auto 4rem;
+  }
+  div.fem-control {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  div.fem-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 700px;
+    height: 440px;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  div.fem-card {
+    max-width: 870px;
+    height: 480px;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

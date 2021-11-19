@@ -15,7 +15,8 @@
         align-items: center;
         padding-bottom: 5.5rem;
 
-        .modal-button {
+        .footer--button {
+            border: none;
             z-index: 100;
             color: #fff;
             background: linear-gradient(120deg, $pink, #4ccce2);
