@@ -658,6 +658,7 @@ p {
 .projects--card {
   width: 100%;
   height: 430px;
+  max-height: 430px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -685,6 +686,11 @@ p {
   transition: 0.4s ease-in-out;
 }
 
+.projects--card:hover .image-mg {
+  -webkit-transform: translate(-335px, -10px);
+          transform: translate(-335px, -10px);
+}
+
 .projects--card:hover .projects--card-content::after {
   top: 0;
 }
@@ -697,6 +703,7 @@ p {
   position: relative;
   overflow: hidden;
   width: 100%;
+  max-height: 430px;
 }
 
 .projects--card-content::after {
@@ -713,21 +720,19 @@ p {
 }
 
 .projects .card-image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
-}
-
-.projects .card-image img {
-  display: block;
 }
 
 .projects .image-calc {
   margin: 0 auto;
   -webkit-transform: translate(10px, -60px) rotate(20deg);
           transform: translate(10px, -60px) rotate(20deg);
+}
+
+.projects .image-mg {
+  -webkit-transform: translateX(-335px);
+          transform: translateX(-335px);
 }
 
 .projects .card-text-control {
@@ -741,6 +746,7 @@ p {
   text-align: center;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  width: 100%;
 }
 
 .projects h2.card-title {
@@ -792,9 +798,17 @@ p {
   img.image-rmdb {
     width: 680px;
   }
+  .projects img.image-mg {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
   div.projects--card {
     max-width: 680px;
     height: 330px;
+  }
+  div.projects--card:hover img.image-mg {
+    -webkit-transform: translate(0px, -10px);
+            transform: translate(0px, -10px);
   }
   div.projects--card-content {
     height: 330px;

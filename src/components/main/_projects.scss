@@ -16,6 +16,7 @@
     &--card {
         width: 100%;
         height: 430px;
+        max-height: 430px;
         display: flex;
         margin: 1.5rem auto;
         background-color: rgb(230, 228, 240);
@@ -26,13 +27,15 @@
                 top: 50%;
                 transform: translateY(-50%);
             }
-
             .card-image {
                 transform: translateY(-16px);
             }
             .image-calc {
                 transform: translate(10px, -70px) rotate(20deg);
                 transition: 0.4s ease-in-out;
+            }
+            .image-mg {
+                transform: translate(-335px, -10px);
             }
 
             .projects--card-content {
@@ -50,6 +53,7 @@
         position: relative;
         overflow: hidden;
         width: 100%;
+        max-height: 430px;
 
         &::after {
             position: absolute;
@@ -68,15 +72,14 @@
     }
 
     .card-image {
-        display: flex;
         transition: 0.4s ease-in-out;
-        img {
-            display: block;
-        }
     }
     .image-calc {
         margin: 0 auto;
         transform: translate(10px, -60px) rotate(20deg);
+    }
+    .image-mg {
+        transform: translateX(-335px);
     }
 
     .card-text-control {
@@ -88,6 +91,7 @@
         transform: translateY(-50%);
         text-align: center;
         transition: all 0.3s;
+        width: 100%;
     }
 
     h2.card-title {
@@ -133,12 +137,18 @@
     img.image-rmdb {
         width: 680px;
     }
-
+    .projects img.image-mg {
+        transform: translate(0px, 0px);
+    }
     div.projects--card {
         max-width: 680px;
         height: 330px;
     }
-
+    div.projects--card:hover {
+        img.image-mg {
+            transform: translate(0px, -10px);
+        }
+    }
     div.projects--card-content {
         height: 330px;
         max-width: 680px;
