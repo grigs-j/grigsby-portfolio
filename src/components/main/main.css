@@ -269,10 +269,14 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 1.25rem 0;
+}
+
+.nav .nav--img-logo {
+  height: 2.75rem;
 }
 
 .nav--flex {

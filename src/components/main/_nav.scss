@@ -5,8 +5,11 @@
 
     &--container {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         padding: 1.25rem 0;
+    }
+    .nav--img-logo {
+        height: 2.75rem;
     }
 
     &--flex {
