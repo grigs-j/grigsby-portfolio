@@ -11,6 +11,11 @@ body {
     padding: 0;
     margin: 0;
 }
+
+.logo {
+    width: 4rem;
+    margin: 2rem auto 0;
+}
 h1 {
     text-align: center;
     color: #fff;
@@ -31,7 +36,7 @@ h1 {
     font-size: 0.825rem;
     color: #fff;
     border: 1px solid hsl(0, 0%, 30%);
-    margin: 0 auto;
+    margin: 0 auto 2rem;
 }
 
 .button:hover {

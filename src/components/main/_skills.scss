@@ -53,6 +53,10 @@
         div.skills--design-text {
             margin-right: 2rem;
         }
+        section#skills.skills {
+            padding-top: 6rem;
+            margin-top: 6rem;
+        }
     }
 
     @include breakpoint(desktop) {

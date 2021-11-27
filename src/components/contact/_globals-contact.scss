@@ -59,6 +59,7 @@ a:visited,
 a:hover {
     font-family: $lato;
     text-decoration: none;
+    cursor: pointer;
 }
 
 ul,
@@ -78,13 +79,16 @@ p {
 
 .nav {
     font-family: $lato;
-
-    --nav-load-time: 650ms;
+    --nav-load-time: 550ms;
 
     &--container {
-        display: flex;
-        justify-content: flex-end;
         padding: 1.25rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav--img-logo {
+        height: 2.75rem;
     }
 
     &--flex {
@@ -112,17 +116,14 @@ p {
             padding-left: 0.75rem;
         }
         .mid-nav-li {
-            animation: nav-load 700ms ease-in;
-        }
-        .last-nav-li {
-            animation: nav-load 800ms ease-in;
+            animation: nav-load 600ms ease-in;
         }
 
         li a {
             position: relative;
             display: block;
             padding: 0.2rem;
-            color: $blue;
+            color: hsl(239, 55%, 66%);
 
             &::before {
                 content: "";
@@ -132,7 +133,7 @@ p {
                 top: 30px;
                 left: 0;
                 right: 0;
-                background: #2e89bd;
+                background: hsl(239, 55%, 66%);
                 height: 1px;
                 transition: all 300ms ease-in-out;
                 opacity: 0;
@@ -143,10 +144,10 @@ p {
                 opacity: 1;
                 transform: translateY(-8px);
                 transition: all 300ms ease-in-out;
-                background: #2e89bd;
+                background: hsl(239, 55%, 66%);
             }
             &:hover {
-                color: #2e89bd;
+                color: hsl(239, 55%, 66%);
                 transform: scale(1.1);
                 transition: all 200ms ease-in-out;
             }
@@ -174,53 +175,63 @@ p {
     }
 }
 
-.title {
-    font-family: $pf;
-    text-align: center;
-    margin-top: 4rem;
-    font-size: 2.75rem;
-    margin-bottom: 0.5rem;
-}
-.subtext {
-    text-align: center;
-    letter-spacing: 0.5px;
-    line-height: 1.6;
-    font-family: $lato;
+.main--text-control {
+    --main-load-time: 650ms;
+
+    animation: main-load var(--main-load-time) ease-in;
+
+    .title {
+        color: hsl(239, 55%, 66%);
+        font-family: $pf;
+        text-align: center;
+        margin-top: 4rem;
+        font-size: 2.75rem;
+        margin-bottom: 0.5rem;
+    }
+    .subtext {
+        animation: main-load 750ms ease-in;
+        text-align: center;
+        letter-spacing: 0.5px;
+        line-height: 1.6;
+        font-family: $lato;
+        color: $dark;
+    }
+
+    .contact-form {
+        display: flex;
+        justify-content: center;
+        padding-top: 4rem;
+        font-family: $lato;
+    }
+
+    form {
+        display: block;
+    }
+
+    input {
+        width: 100%;
+        font-size: 1rem;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid hsl(239, 55%, 66%);
+        outline: none;
+        margin-bottom: 1.5rem;
+    }
+
+    textarea {
+        font-family: $lato;
+        width: 100%;
+        font-size: 1rem;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid hsl(239, 55%, 66%);
+        outline: none;
+        margin-bottom: 2rem;
+    }
+
+    //global a link styled-buttons
 }
 
-.contact-form {
-    display: flex;
-    justify-content: center;
-    padding-top: 4rem;
-    font-family: $lato;
-}
-
-form {
-    display: block;
-}
-
-input {
-    width: 100%;
-    font-size: 1rem;
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid hsl(239, 55%, 66%);
-    outline: none;
-    margin-bottom: 1.5rem;
-}
-
-textarea {
-    font-family: $lato;
-    width: 100%;
-    font-size: 1rem;
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid hsl(239, 55%, 66%);
-    outline: none;
-    margin-bottom: 2rem;
-}
-
-//global a link styled-buttons
 .button {
     font-family: $lato;
     align-items: center;
@@ -233,12 +244,36 @@ textarea {
     text-transform: uppercase;
     font-size: 0.825rem;
     cursor: pointer;
-    border: 1px solid hsl(0, 0%, 60%);
-    color: $blue;
+    border: 1px solid $dark;
+    color: hsl(239, 55%, 66%);
+
+    animation: main-load 800ms ease-in;
 
     &:hover {
         transform: scale(1.01);
         transition: all 250ms ease-in-out;
         box-shadow: 0.05rem 0.1rem 0.25rem rgba(121, 122, 216, 0.4);
+    }
+}
+
+@keyframes main-load {
+    0% {
+        transform: translateY(-5%);
+        opacity: 0;
+        transform: scale(1.02);
+    }
+
+    10% {
+        opacity: 0.5s;
+    }
+
+    80% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        transform: scale(1);
     }
 }

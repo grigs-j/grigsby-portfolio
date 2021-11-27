@@ -431,7 +431,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  left: 50%;
+  left: 47%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 100%;
@@ -654,6 +654,10 @@ p {
   }
   .skills div.skills--design-text {
     margin-right: 2rem;
+  }
+  .skills section#skills.skills {
+    padding-top: 6rem;
+    margin-top: 6rem;
   }
 }
 
