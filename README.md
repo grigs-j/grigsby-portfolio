@@ -1,7 +1,9 @@
 # grigsby-portfolio
 This is my portfolio page created using HTL, SASS, JavaScript, and Illustrator.
 
-##Focus
+##
+Focus
+
 ##
 My main focus was aethetics and functionality. I build the website from scratch utilizing basic design principles, color, typography, and UI/UX.
 
