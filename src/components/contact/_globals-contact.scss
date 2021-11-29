@@ -41,6 +41,7 @@ body {
     line-height: 1.4;
     margin: 0;
     padding: 0;
+    background: rgba(234, 232, 241, 0.1);
 }
 
 .container {
@@ -124,6 +125,7 @@ p {
             display: block;
             padding: 0.2rem;
             color: hsl(239, 55%, 66%);
+            font-size: 0.825rem;
 
             &::before {
                 content: "";
@@ -244,7 +246,7 @@ p {
     text-transform: uppercase;
     font-size: 0.825rem;
     cursor: pointer;
-    border: 1px solid $dark;
+    border: 1px solid hsl(239, 55%, 66%);
     color: hsl(239, 55%, 66%);
 
     animation: main-load 800ms ease-in;

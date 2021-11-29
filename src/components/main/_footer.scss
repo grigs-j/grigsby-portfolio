@@ -1,12 +1,13 @@
 .footer {
     text-align: center;
-    background: linear-gradient(120deg, rgb(236, 222, 253), rgb(225, 201, 255));
+    background: linear-gradient(120deg, #84d98d, #49bc8f);
+    padding-bottom: 6rem;
 
     h2 {
-        color: $purp;
+        color: #217052;
         font-family: $lato;
         font-size: 2.25rem;
-        margin: 6rem 0 4rem 0;
+        margin: 6rem 0 2rem 0;
     }
 
     &--cta {
@@ -18,8 +19,9 @@
         .footer--button {
             border: none;
             z-index: 100;
-            color: #fff;
-            background: linear-gradient(120deg, $pink, #4ccce2);
+            color: $offwhite;
+            background: linear-gradient(120deg, $pink, #49bc8f);
+            // background: linear-gradient(120deg, $pink, #4ccce2);
             &:hover {
                 transform: scale(1.01);
                 transition: all 250ms ease-in-out;
@@ -27,8 +29,8 @@
             }
         }
         .footer--logo {
-            padding-top: 2rem;
-            width: 6rem;
+            width: 4rem;
+            padding-bottom: 1rem;
         }
     }
 
@@ -37,14 +39,13 @@
         width: 150px;
         margin: 0 auto;
         justify-content: space-evenly;
-        padding-bottom: 2.5rem;
 
         i {
             z-index: 100;
             font-size: 2rem;
-            color: $purp;
+            color: $offwhite;
             &:hover {
-                color: $pink;
+                color: #217052;
                 transition: color ease-in 250ms;
             }
         }
@@ -54,6 +55,9 @@
 @include breakpoint(tablet) {
     .footer h2 {
         font-size: 2.5rem;
+    }
+    .footer img.footer--logo {
+        width: 6rem;
     }
 }
 

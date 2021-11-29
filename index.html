@@ -44,7 +44,7 @@
                     <ul class="nav--flex">
                         <li class="fist-nav-li"><a href="#">HOME</a></li>
                         <li class="mid-nav-li">
-                            <a href="#skills">PROJECTS</a>
+                            <a href="#projects">PROJECTS</a>
                         </li>
                         <li class="last-nav-li">
                             <a href="/pages/contact.html">CONTACT</a>
@@ -52,20 +52,21 @@
                     </ul>
                 </div>
             </nav>
-            <div class="hero--absolute">
+
+            <div class="front-page-control">
                 <div class="hero--background">
                     <img src="/src/img/hero-jg.png" alt="" />
                 </div>
             </div>
-            <div class="hero--container" id="container">
-                <h1 class="hero--main-text">Front End Developer</h1>
+            <div class="hero--container">
+                <h1 class="hero--main-text">Front-end Developer</h1>
                 <p class="hero--subtext">
                     design with a logical mind, creative heart & caffeinated
                     brain
                 </p>
 
                 <div class="hero--button-container">
-                    <a href="#skills" class="hero--button button"
+                    <a href="#projects" class="hero--button button"
                         >view projects
                     </a>
                 </div>
@@ -97,7 +98,6 @@
                             <p class="list-text">Tailwind</p>
                             <p class="list-text">Node</p>
                             <p class="list-text">React</p>
-                            <p class="list-text">API/JSON</p>
                         </div>
                         <div class="skills--list">
                             <p class="list-text">HTML</p>
@@ -130,10 +130,7 @@
                                 <h2 class="card-title">Author Website</h2>
                                 <p class="card-text">
                                     Designed website for author Mike Grigsby
-                                    promoting his new thriller release. Focused
-                                    on pushing call to action through
-                                    minimalism. Still in progress, book due to
-                                    come out in a few months.
+                                    promoting his new thriller release.
                                 </p>
                                 <div class="card-button-control">
                                     <a
@@ -146,6 +143,39 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="projects--card card-fem">
+                        <div class="projects--card-content">
+                            <img
+                                src="/src/img/fem-preview.PNG"
+                                alt=""
+                                class="card-image image-fem"
+                            />
+                            <div class="card-text-control">
+                                <h2 class="card-title">
+                                    Front End Mentor Templates
+                                </h2>
+                                <p class="card-text">
+                                    Clones of website templates recreated using
+                                    HTML, SASS, Javascript, and
+                                    <a
+                                        href="https://www.frontendmentor.io/"
+                                        target="blank_"
+                                        >Front End Mentor</a
+                                    >
+                                    .
+                                </p>
+                                <div class="card-button-control">
+                                    <a
+                                        href="/pages/fem.html"
+                                        class="projects--button spec button"
+                                        >View Projects</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="projects--card card-react">
                         <div class="projects--card-content">
                             <img
@@ -210,38 +240,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="projects--card card-fem">
-                        <div class="projects--card-content">
-                            <img
-                                src="/src/img/fem-preview.PNG"
-                                alt=""
-                                class="card-image image-fem"
-                            />
-                            <div class="card-text-control">
-                                <h2 class="card-title">
-                                    Front End Mentor Templates
-                                </h2>
-                                <p class="card-text">
-                                    Clones of website templates recreated using
-                                    HTML, SASS, Javascript, and
-                                    <a
-                                        href="https://www.frontendmentor.io/"
-                                        target="blank_"
-                                        >Front End Mentor</a
-                                    >
-                                    .
-                                </p>
-                                <div class="card-button-control">
-                                    <a
-                                        href="/pages/fem.html"
-                                        class="projects--button spec button"
-                                        >View Projects</a
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -251,15 +249,16 @@
             <div id="container">
                 <div class="footer--cta">
                     <h2>Interested in working together?</h2>
-                    <a href="/pages/contact.html" class="button footer--button">
-                        Let's talk!
-                    </a>
+
                     <a href="#">
                         <img
                             class="footer--logo"
                             src="/src/img/codedog-full.png"
                             alt=""
                         />
+                    </a>
+                    <a href="/pages/contact.html" class="button footer--button">
+                        Let's talk!
                     </a>
                 </div>
             </div>

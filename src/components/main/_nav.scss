@@ -8,9 +8,11 @@
         justify-content: space-between;
         align-items: center;
         padding: 1.25rem 0;
+        z-index: 10;
     }
     .nav--img-logo {
         height: 2.75rem;
+        opacity: 0.8;
     }
 
     &--flex {
@@ -49,6 +51,7 @@
             display: block;
             padding: 0.2rem;
             color: rgb(234, 232, 241);
+            font-size: 0.825rem;
 
             &::before {
                 content: "";
