@@ -85,7 +85,7 @@ p {
   text-transform: uppercase;
   font-size: 0.825rem;
   border: 1px solid #797ad8;
-  border-radius: 50px;
+  border-radius: 18px;
   color: #797ad8;
 }
 
@@ -364,8 +364,8 @@ p {
   color: #fff;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-transition: all 280ms ease-in-out;
-  transition: all 280ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 @-webkit-keyframes nav-load {
@@ -413,7 +413,7 @@ p {
   background: linear-gradient(to bottom right, #9e1e9b, #154eeb, #4beb93);
   color: #eae8f1;
   height: 100vh;
-  --hero-load-time: 650ms;
+  --hero-load-time: 700ms;
 }
 
 .hero .front-page-control {
@@ -458,7 +458,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 auto 2.25rem;
+  margin: 0 auto 1.825rem;
   text-align: center;
   font-size: 2.25rem;
   font-weight: 700;
@@ -473,8 +473,8 @@ p {
   font-family: "Lato";
   font-size: 0.85rem;
   letter-spacing: 2px;
-  -webkit-animation: hero-load var(--hero-load-time) ease-in;
-          animation: hero-load var(--hero-load-time) ease-in;
+  -webkit-animation: hero-load 800ms ease-in;
+          animation: hero-load 800ms ease-in;
 }
 
 .hero--button {
@@ -483,8 +483,13 @@ p {
   background: linear-gradient(120deg, #195df1, #4ccce2);
   color: #eae8f1;
   font-weight: 700;
-  -webkit-animation: hero-load 750ms ease-in;
-          animation: hero-load 750ms ease-in;
+  -webkit-animation: hero-load 850ms ease-in;
+          animation: hero-load 850ms ease-in;
+  margin-bottom: 1rem;
+}
+
+.hero .resume-button {
+  background: linear-gradient(120deg, #2532e2, #9888f7);
 }
 
 .hero .hero--button:hover {
@@ -535,16 +540,16 @@ p {
 
 @-webkit-keyframes hero-load {
   0% {
-    -webkit-transform: translateY(-15%);
-            transform: translateY(-15%);
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
     opacity: 0;
   }
   10% {
-    opacity: 0.3s;
   }
   80% {
-    -webkit-transform: translateY(60px);
-            transform: translateY(60px);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    opacity: 0.2;
   }
   100% {
     -webkit-transform: translateY(0);
@@ -555,16 +560,16 @@ p {
 
 @keyframes hero-load {
   0% {
-    -webkit-transform: translateY(-15%);
-            transform: translateY(-15%);
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
     opacity: 0;
   }
   10% {
-    opacity: 0.3s;
   }
   80% {
-    -webkit-transform: translateY(60px);
-            transform: translateY(60px);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    opacity: 0.2;
   }
   100% {
     -webkit-transform: translateY(0);
@@ -913,12 +918,12 @@ p {
 
 .footer {
   text-align: center;
-  background: linear-gradient(120deg, #84d98d, #49bc8f);
+  background: linear-gradient(120deg, #49bcad, #213f70);
   padding-bottom: 6rem;
 }
 
 .footer h2 {
-  color: #217052;
+  color: #eae8f1;
   font-family: "Lato";
   font-size: 2.25rem;
   margin: 6rem 0 2rem 0;
@@ -941,8 +946,9 @@ p {
 .footer--cta .footer--button {
   border: none;
   z-index: 100;
-  color: #eae8f1;
-  background: linear-gradient(120deg, #ff9ede, #49bc8f);
+  color: #0c1027;
+  font-weight: 700;
+  background: linear-gradient(120deg, #c4fff0, #7db3c9);
 }
 
 .footer--cta .footer--button:hover {
@@ -977,7 +983,7 @@ p {
 }
 
 .footer--social-container i:hover {
-  color: #217052;
+  color: #c4fff0;
   -webkit-transition: color ease-in 250ms;
   transition: color ease-in 250ms;
 }

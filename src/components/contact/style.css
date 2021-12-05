@@ -271,6 +271,7 @@ p {
   font-size: 0.825rem;
   cursor: pointer;
   border: 1px solid #797ad8;
+  border-radius: 18px;
   color: #797ad8;
   -webkit-animation: main-load 800ms ease-in;
           animation: main-load 800ms ease-in;
